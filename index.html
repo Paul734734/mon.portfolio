@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+        <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' fonts.googleapis.com; font-src fonts.gstatic.com; connect-src 'self' *.supabase.co api.emailjs.com; img-src 'self' data:;">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Etouke Paul Jovani — Aspirant Cybersécurity Engineering & Business
+      Development
+    </title>
+    <meta
+      name="description"
+      content="Portfolio de Etouke Paul Jovani, futur ingénieur en cybersécurité et community manager freelance."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Particle canvas background -->
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <!-- Header -->
+    <header class="site-header" id="header">
+      <div class="container header-inner">
+        <a href="#" class="brand"
+          ><span class="brand-bracket">&lt;</span>EPJ<span class="brand-bracket"
+            >/&gt;</span
+          ></a
+        >
+        <nav class="nav" id="nav">
+          <ul class="nav-list" id="navList">
+            <li><a href="#home" class="nav-link">Accueil</a></li>
+            <li><a href="#resume" class="nav-link">CV</a></li>
+            <li><a href="#projects" class="nav-link">Projets</a></li>
+            <li><a href="#skills" class="nav-link">Compétences</a></li>
+            <li><a href="#reviews" class="nav-link">Avis</a></li>
+            <li>
+              <a href="#contact" class="nav-link btn btn-primary">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Menu"
+          aria-expanded="false"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="section hero">
+      <div class="container hero-inner">
+        <div class="hero-text" data-animate="fade-up">
+          <p class="eyebrow">
+            <span class="terminal-cursor">$</span> who I am?
+          </p>
+          <h1 class="title">
+            ETOUKE<br /><span class="title-accent">PAUL JOVANI</span>
+          </h1>
+          <p class="subtitle typed-text" id="typedText"></p>
+          <p class="lead">
+            Jeune professionnel alliant <strong>expérience</strong> en Community
+            Management, stratégie de développement et une formation d'ingénieur
+            en <strong>cybersécurité</strong> en cours. Rigoureux, créatif et
+            orienté résultats.
+          </p>
+          <div class="cta-group">
+            <a
+              href="assets/CV_Etouke_Paul_Jovani.pdf"
+              class="btn btn-primary"
+              download="CV_Etouke_Paul_Jovani.pdf"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                <polyline points="7,10 12,15 17,10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Télécharger CV
+            </a>
+            <a href="#contact" class="btn btn-outline">Me Recruter</a>
+          </div>
+          <div class="socials">
+            <a
+              href="https://www.linkedin.com/in/paul-etouke-4a1b5b314/"
+              target="_blank"
+              rel="noopener"
+              class="social-link"
+              aria-label="LinkedIn"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/Paul734734"
+              target="_blank"
+              rel="noopener"
+              class="social-link"
+              aria-label="GitHub"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                />
+              </svg>
+              GitHub
+            </a>
+            <a
+              href="mailto:pauljovani15@gmail.com"
+              class="social-link"
+              aria-label="Email"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              Email
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual" data-animate="fade-left">
+          <div class="avatar-wrapper">
+            <img
+              src="assets/photo1.jpg"
+              alt="Etouke Paul Jovani"
+              class="avatar-img"
+            />
+            <div class="avatar-ring"></div>
+            <div class="avatar-ring ring-2"></div>
+          </div>
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Disponible pour missions</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Stats bar -->
+    <div class="stats-bar">
+      <div class="container stats-inner">
+        <div class="stat-item">
+          <span class="stat-num" data-count="4">4</span>
+          ><span class="stat-label">projets réalisés</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="5">0</span
+          ><span class="stat-label">projets en cours</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="12">+12</span
+          ><span class="stat-label">outils maîtrisés</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="2">0</span
+          ><span class="stat-label">certifications en cours</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Resume -->
+    <section id="resume" class="section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <p class="section-eyebrow">Mon parcours</p>
+          <h2 class="section-title">Expérience & Formation</h2>
+        </div>
+        <div class="timeline-grid">
+          <!-- Left: Experience -->
+          <div class="timeline-col" data-animate="fade-up" data-delay="100">
+            <h3 class="timeline-heading">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
+              </svg>
+              Expérience
+            </h3>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content card">
+                <div class="timeline-meta">
+                  <span class="timeline-date">2020 — 2025</span>
+                  <span class="timeline-badge">5 ans</span>
+                </div>
+                <h4>Community Manager Freelance</h4>
+                <p class="timeline-company">Missions Diverses</p>
+                <ul class="timeline-list">
+                  <li>
+                    Création et animation de pages Facebook, Instagram, TikTok
+                    et LinkedIn
+                  </li>
+                  <li>
+                    Développement de lignes éditoriales et stratégies de contenu
+                  </li>
+                  <li>Planification via Meta Business Suite et Hootsuite</li>
+                  <li>
+                    Campagnes publicitaires digitales (Facebook Ads, Instagram
+                    Ads)
+                  </li>
+                  <li>
+                    Reporting mensuel KPIs : portée, engagement, conversions
+                  </li>
+                </ul>
+                <div class="timeline-sectors">
+                  <span>Éducation</span><span>Commerce</span><span>Culture</span
+                  ><span>Événementiel</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content card">
+                <div class="timeline-meta">
+                  <span class="timeline-date">En cours</span>
+                  <span class="timeline-badge badge-active">Actif</span>
+                </div>
+                <h4>Recherche Personnelle et technique</h4>
+                <p class="timeline-company">Communauté / Labo perso</p>
+                <ul class="timeline-list">
+                  <li>Gestion des vulnérabilités et réponse aux incidents</li>
+
+                  <li>Debugging et gestion de laboratoire de sécurité</li>
+                  <li>...</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Education -->
+          <div class="timeline-col" data-animate="fade-up" data-delay="200">
+            <h3 class="timeline-heading">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+              Formation
+            </h3>
+
+            <div class="timeline-item">
+              <div class="timeline-dot dot-edu"></div>
+              <div class="timeline-content card">
+                <div class="timeline-meta">
+                  <span class="timeline-date">En cours</span>
+                  <span class="timeline-badge badge-active">En cours</span>
+                </div>
+                <h4>Cycle Ingénieur — Cybersécurité</h4>
+                <p class="timeline-company">ISTILE University</p>
+                <p class="timeline-desc">
+                  Sécurité informatique, réseaux, systèmes d'information, et
+                  protection des données, Migration CI/CD vers GitHub Actions
+                  (DevSecOps)...
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot dot-cert"></div>
+              <div class="timeline-content card">
+                <div class="timeline-meta">
+                  <span class="timeline-date">En cours</span>
+                  <span class="timeline-badge badge-active">En cours</span>
+                </div>
+                <h4>Certifications</h4>
+                <p class="timeline-company">Formations en ligne</p>
+                <ul class="timeline-list">
+                  <li>📋 Management de Projets</li>
+                  <li>Cisco CCST</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-actions">
+          <a
+            href="assets/CV_Etouke_Paul_Jovani.pdf"
+            class="btn btn-secondary"
+            download="CV_Etouke_Paul_Jovani.pdf"
+            >Voir le CV complet</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <p class="section-eyebrow">Ce que j'ai construit</p>
+          <h2 class="section-title">Projets</h2>
+        </div>
+        <div class="projects-filter" data-animate="fade-up" data-delay="100">
+          <button class="filter-btn active" data-filter="all">Tous</button>
+          <button class="filter-btn" data-filter="cyber">Cybersécurité</button>
+          <button class="filter-btn" data-filter="dev">Développement</button>
+        </div>
+        <div
+          class="grid grid-3 projects-grid"
+          data-animate="fade-up"
+          data-delay="150"
+        >
+          <article class="card card-project" data-category="dev">
+            <div class="project-icon">🚌</div>
+            <h3 class="card-title">GoBus - Réservation Transport</h3>
+            <p>
+              Plateforme compl&egrave;te de r&eacute;servation de billets de bus pour le march&eacute; camerounais.
+              Syst&egrave;me de paiement Mobile Money (MTN Mobile Money & Orange Money),
+              g&eacute;n&eacute;ration automatique de QR Codes pour les e-billets,
+              interface de s&eacute;lection interactive des si&egrave;ges et portefeuille num&eacute;rique int&eacute;gr&eacute;.
+            </p>
+            <div class="project-tags">
+              <span>React</span><span>TypeScript</span><span>Supabase</span><span>Mobile Money</span>
+            </div>
+            <a href="#" class="card-link">En cours â</a>
+          </article>
+
+          <article class="card card-project" data-category="cyber">
+            <div class="project-icon">🛡️</div>
+            <h3 class="card-title">Détection d'intrusion</h3>
+            <p>
+              Installation et configuration d'un système IDS/IPS pour des
+              startups locales. Surveillance temps réel du trafic réseau.
+            </p>
+            <div class="project-tags">
+              <span>Snort</span><span>Linux</span><span>Réseau</span>
+            </div>
+            <a href="#" class="card-link">En cours(45%)</a>
+          </article>
+
+          <article class="card card-project" data-category="cyber">
+            <div class="project-icon">🔒</div>
+            <h3 class="card-title">Sécurité Réseaux</h3>
+            <p>
+              Mise en place de pare-feu, VPN et protocoles de sécurité pour
+              infrastructures PME.
+            </p>
+            <div class="project-tags">
+              <span>Firewall</span><span>VPN</span><span>Wireshark</span>
+            </div>
+            <a href="#" class="card-link">En cours(50%)</a>
+          </article>
+
+          <article class="card card-project" data-category="dev">
+            <div class="project-icon">🎮</div>
+            <h3 class="card-title">King Kong Game(En cours 85%)</h3>
+            <p>
+              Jeu de plateforme en Python avec gestion des collisions, niveaux
+              et sprites animés.
+            </p>
+            <div class="project-tags">
+              <span>Python</span><span>Pygame</span>
+            </div>
+            <a href="https://github.com/Paul734734/King-Kong-Game" target="_blank" rel="noopener" class="card-link">Voir le projet →</a>
+          </article>
+
+          <article class="card card-project" data-category="dev">
+            <div class="project-icon">🌦️</div>
+            <h3 class="card-title">Weather GUI (Tkinter)</h3>
+            <p>
+              Application Python avec interface graphique Tkinter et API météo
+              multi-villes en temps réel.
+            </p>
+            <div class="project-tags">
+              <span>Python</span><span>Tkinter</span><span>API</span>
+            </div>
+            <a href="#" class="card-link">En cours(10%)</a>
+          </article>
+
+          <article class="card card-project" data-category="dev">
+            <div class="project-icon">📦</div>
+            <h3 class="card-title">Gestion des paquets</h3>
+            <p>
+              Gestionnaire de paquets APT (Advanced Package Tool) — scripts
+              d'automatisation Linux.
+            </p>
+            <div class="project-tags">
+              <span>Bash</span><span>APT</span><span>Linux</span>
+            </div>
+            <a href="#" class="card-link">En cours(30%)</a>
+          </article>
+
+          <article class="card card-project" data-category="dev">
+            <div class="project-icon">🎄</div>
+            <h3 class="card-title">Holiday Site</h3>
+            <p>
+              Interface responsive pour vœux de Noël et Nouvel An avec
+              animations CSS.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <a href="https://github.com/Paul734734/Holiday-Site" target="_blank" rel="noopener" class="card-link">Voir le projet →</a>
+          </article>
+
+          <article class="card card-project" data-category="dev">
+            <div class="project-icon">🧠</div>
+            <h3 class="card-title">Edu App</h3>
+            <p>
+              Quiz interactifs pour cours d'anglais. Apprentissage ludique avec
+              score et timer.
+            </p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>HTML</span><span>CSS</span>
+            </div>
+            <a href="https://github.com/Paul734734/Edu-App" target="_blank" rel="noopener" class="card-link">Voir le projet →</a>
+          </article>
+
+          <article class="card card-project" data-category="cm">
+            <div class="project-icon">📱</div>
+            <h3 class="card-title">Portfolio Personnel</h3>
+            <p>
+              Ce portfolio — conception et développement complet en HTML/CSS/JS
+              avec back-end PHP.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>PHP</span>
+            </div>
+            <a href="https://paul734734.github.io/Portfolio/" target="_blank" rel="noopener" class="card-link">Voir le projet →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <p class="section-eyebrow">Mes outils</p>
+          <h2 class="section-title">Compétences Techniques</h2>
+        </div>
+        <div class="skills-wrapper">
+          <div class="skills-col" data-animate="fade-up" data-delay="100">
+            <h3 class="skills-cat-title">💻 Développement Web & Scripting</h3>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <div class="skill-bar-label">
+                  <span>HTML / CSS</span><span>80%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label">
+                  <span>Bootstrap</span><span>80%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label">
+                  <span>Python</span><span>75%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="75"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label">
+                  <span>JavaScript</span><span>65%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="65"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label">
+                  <span>Git / GitHub</span><span>80%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label">
+                  <span>Bash / Shell</span><span>65%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="65"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label">
+                  <span>PHP</span><span>80%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Langage C</span><span>80%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>MySQL</span><span>80%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Supabase</span><span>70%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>EmailJS</span><span>60%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Sécurité Réseaux</span><span>50%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="50"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Symfony</span><span>40%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="40"></div></div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label"><span>Composer</span><span>40%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="40"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-col" data-animate="fade-up" data-delay="200">
+            <h3 class="skills-cat-title">
+              🔐 Cybersécurité — Outils & Systèmes
+            </h3>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <div class="skill-bar-label">
+                  <span>Kali Linux</span><span>70%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div
+                    class="skill-bar-fill"
+                    data-width="70"
+                    data-color="#f97316"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label">
+                  <span>Metasploit Framework</span><span>70%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div
+                    class="skill-bar-fill"
+                    data-width="70"
+                    data-color="#f97316"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label">
+                  <span>Nmap</span><span>65%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div
+                    class="skill-bar-fill"
+                    data-width="65"
+                    data-color="#f97316"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label">
+                  <span>Wireshark</span><span>60%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div
+                    class="skill-bar-fill"
+                    data-width="60"
+                    data-color="#f97316"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label">
+                  <span>Hydra / Hashcat</span><span>45%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div
+                    class="skill-bar-fill"
+                    data-width="45"
+                    data-color="#f97316"
+                  ></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-label">
+                  <span>Analyse de Malwares</span><span>45%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div
+                    class="skill-bar-fill"
+                    data-width="45"
+                    data-color="#f97316"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="skills-cat-title" style="margin-top: 28px">
+              📣 Community Management
+            </h3>
+            <div class="tags-cloud">
+              <span class="tag-badge">Meta Business Suite</span>
+              <span class="tag-badge">TikTok Ads</span>
+              <span class="tag-badge">Hootsuite</span>
+              <span class="tag-badge">Canva</span>
+              <span class="tag-badge">Google Analytics</span>
+              <span class="tag-badge">Facebook Ads</span>
+              <span class="tag-badge">WordPress</span>
+              <span class="tag-badge">Adobe Express</span>
+              <span class="tag-badge">EmailJS</span>
+              <span class="tag-badge">GitHub Pages</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features / Intérêts -->
+    <section id="features" class="section section-alt">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <p class="section-eyebrow">Ce qui me définit</p>
+          <h2 class="section-title">Centres d'intérêt</h2>
+        </div>
+        <div class="grid grid-3" data-animate="fade-up" data-delay="100">
+          <article class="card interest-card">
+            <div class="interest-icon">⚙️</div>
+            <h3 class="card-title">Musique</h3>
+            <p>Création musicale, Production musicale</p>
+          </article>
+          <article class="card interest-card">
+            <div class="interest-icon">🤝</div>
+            <h3 class="card-title">Travail d'équipe</h3>
+            <p>
+              Communication efficace, collaboration, respect mutuel et
+              leadership partagé.
+            </p>
+          </article>
+          <article class="card interest-card">
+            <div class="interest-icon">🎨</div>
+            <h3 class="card-title">Création & Design</h3>
+            <p>
+              Photographie, création de contenu visuel, et veille constante sur
+              les tendances digitales.
+            </p>
+          </article>
+        </div>
+
+        <div class="qualities-grid" data-animate="fade-up" data-delay="200">
+          <div class="quality-pill">✨ Créativité</div>
+          <div class="quality-pill">🎯 Rigueur</div>
+          <div class="quality-pill">🧠 Autonomie</div>
+          <div class="quality-pill">👥 Esprit d'équipe</div>
+          <div class="quality-pill">🔄 Adaptabilité</div>
+          <div class="quality-pill">🔍 Curiosité intellectuelle</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <p class="section-eyebrow">Témoignages</p>
+          <h2 class="section-title">Avis</h2>
+        </div>
+        <div class="grid grid-2" data-animate="fade-up" data-delay="100">
+          <blockquote class="quote">
+            <svg
+              class="quote-icon"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <path
+                d="M8 16h4V12H8v4zm0 0v4h4v-4H8zm12-4h4v4h-4v-4zm0 4h4v4h-4v-4z"
+                fill="var(--primary)"
+                opacity="0.4"
+              />
+            </svg>
+            <p>"Ça semble toujours impossible jusqu'à ce que ce soit fait."</p>
+            <cite>— Nelson Mandela</cite>
+          </blockquote>
+          <article class="card review-card">
+            <div class="review-stars">★★★★★</div>
+            <p>
+              "Design clair, structuré et très professionnel. Moi, Etouke Paul,
+              je démontre une vraie maîtrise des outils web et une vision
+              orientée sécurité."
+            </p>
+            <cite>—</cite>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <div class="section-header" data-animate="fade-up">
+          <p class="section-eyebrow">Travaillons ensemble</p>
+          <h2 class="section-title">Contact</h2>
+        </div>
+        <div class="grid grid-2" data-animate="fade-up" data-delay="100">
+          <form class="card form" id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="name">Nom complet</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Votre nom"
+                required
+                autocomplete="name"
+              />
+              <small class="error" data-error-for="name"></small>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="vous@example.com"
+                required
+                autocomplete="email"
+              />
+              <small class="error" data-error-for="email"></small>
+            </div>
+            <div class="form-row">
+              <label for="subject">Sujet</label>
+              <select id="subject" name="subject">
+                <option value="collaboration">Collaboration</option>
+                <option value="freelance">Mission Freelance</option>
+                <option value="emploi">Opportunité d'emploi</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Votre message..."
+                required
+              ></textarea>
+              <small class="error" data-error-for="message"></small>
+            </div>
+            <div style="position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden" aria-hidden="true">
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary btn-full"
+              id="submitBtn"
+            >
+              <span id="btnText">Envoyer le message</span>
+              <span id="btnLoader" style="display: none"
+                >Envoi en cours...</span
+              >
+            </button>
+            <p
+              class="form-status"
+              id="formStatus"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+
+          <div class="card contact-info">
+            <h3 class="card-title">Informations</h3>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon">📍</span>
+                <div><strong>Localisation</strong><br />Yaoundé, Cameroun</div>
+              </li>
+              <li>
+                <span class="contact-icon">📱</span>
+                <div>
+                  <strong>Téléphone</strong><br /><a href="tel:+237659285873"
+                    >+237 659 285 873</a
+                  >
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon">✉️</span>
+                <div>
+                  <strong>Email</strong><br /><a
+                    href="mailto:pauljovani15@gmail.com"
+                    >pauljovani15@gmail.com</a
+                  >
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon">💼</span>
+                <div>
+                  <strong>Rôle</strong><br />Cybersecurity Engineer (en
+                  formation)<br />Developpement Web
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon">🟢</span>
+                <div>
+                  <strong>Disponibilité</strong><br />Collaboration · Freelance
+                  · Opportunités
+                </div>
+              </li>
+            </ul>
+            <div class="contact-socials">
+              <a
+                href="https://linkedin.com/in/etouke-paul"
+                target="_blank"
+                class="btn btn-outline"
+                >LinkedIn</a
+              >
+              <a
+                href="https://github.com/etouke-paul"
+                target="_blank"
+                class="btn btn-outline"
+                >GitHub</a
+              >
+              <a href="mailto:pauljovani15@gmail.com" class="btn btn-outline"
+                >Email</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>
+          &copy; <span id="year"></span> Etouke Paul Jovani — Tous droits
+          réservés.
+        </p>
+        <p class="footer-sub">Built with ❤️ | Yaoundé, Cameroun</p>
+      </div>
+    </footer>
+
+    <!-- Supabase -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-config.js"></script>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>emailjs.init('VxC0v4uC1hYJrvOUN');</script>
+
+  <!-- Ton JavaScript principal -->
+  <script src="main.js"></script>
+  </body>
+</html>
