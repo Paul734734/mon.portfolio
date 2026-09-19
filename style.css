@@ -560,8 +560,8 @@ body {
 /* ---------- Skills ---------- */
 .skills-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
 }
 .skills-cat-title {
   font-size: 14px;
